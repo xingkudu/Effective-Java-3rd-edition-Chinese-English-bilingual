@@ -18,7 +18,7 @@ Note that a static factory method is not the same as the Factory Method pattern 
 
 A class can provide its clients with static factory methods instead of, or in addition to, public constructors. Providing a static factory method instead of a public constructor has both advantages and disadvantages.
 
-除了公共构造函数，一个类还可以通过静态工厂方法提供它的客户端。使用静态工厂方法而不是公共构造函数的方式既有优点也有缺点。
+类可以不对外提供公共构造方法或者除了公共构造方法外，提供静态工厂方法。提供静态工厂方法而不是公共构造函数既有优点也有缺点。
 
 **One advantage of static factory methods is that, unlike constructors, they have names.** If the parameters to a constructor do not, in and of themselves, describe the object being returned, a static factory with a well-chosen name is easier to use and the resulting client code easier to read. For example, the constructor BigInteger(int, int, Random), which returns a BigInteger that is probably prime, would have been better expressed as a static factory method named BigInteger.probablePrime. (This method was added in Java 4.)
 
